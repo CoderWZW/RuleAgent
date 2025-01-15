@@ -1,6 +1,6 @@
-training.set: ./dataset/Gowalla_small/train.txt
+training.set: ./dataset/Beauty_small/train.txt
 
-test.set: ./dataset/Gowalla_small/test.txt
+test.set: ./dataset/Beauty_small/test.txt
 
 model:
   name: MF
