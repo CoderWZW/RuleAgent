@@ -1,0 +1,17 @@
+training.set: ./dataset/Gowalla_small/train.txt
+
+test.set: ./dataset/Gowalla_small/test.txt
+
+model:
+  name: MF
+  type: graph
+
+item.ranking.topN: [10,20]
+
+embedding.size: 64
+max.epoch: 500
+batch.size: 512
+learning.rate: 0.001
+reg.lambda: 0.0001
+
+output: ./results/
