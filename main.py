@@ -1,4 +1,4 @@
-from SELFRec import SELFRec
+from AgentRec import AgentRec
 from util.conf import ModelConf
 import time
 import os
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     }
 
     print('=' * 80)
-    print('   SELFRec: A library for recommendation.   ')
+    print('   AgentRec: A library for recommendation.   ')
     print_models("Available Models", models)
 
     # model = input('Please enter the model you want to run:')
@@ -36,7 +36,7 @@ if __name__ == '__main__':
     all_models = sum(models.values(), [])
     if model in all_models:
         conf = ModelConf(f'./conf/{model}.yaml')
-        rec = SELFRec(conf)
+        rec = AgentRec(conf)
         rec.execute()
         e = time.time()
         print(f"Running time: {e - s:.2f} s")
